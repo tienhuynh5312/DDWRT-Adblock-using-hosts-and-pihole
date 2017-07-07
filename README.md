@@ -1,3 +1,4 @@
+
 # DDWRT-Adblock-using-hosts-and-pihole
 
 ## Create a mega host file for ad block
@@ -33,7 +34,8 @@ Now, we need to make some changes in DNSMasq setting.
   + Local DNS: Enable
   + No DNS Rebind: Enable
   + Inside the "Additional DNSMasq Options" add these lines:
-    `addn-hosts=/jffs/dnsmasq/mphosts
-    dhcp-option=6, 176.103.130.130, 176.103.130.131`
+    `addn-hosts=/jffs/dnsmasq/mphosts`
+    
+    `dhcp-option=6, 176.103.130.130, 176.103.130.131`
     
 Reboot the router.
