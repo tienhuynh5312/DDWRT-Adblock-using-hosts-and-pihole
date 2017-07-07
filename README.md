@@ -1,10 +1,11 @@
-
 # DDWRT-Adblock-using-hosts-and-pihole
 
 ## Create a mega host file for ad block
 Credit: @m-parashar
 https://gist.github.com/m-parashar/ee38454c27f7a4f4e4ab28249a834ccc
 File name: adbhostgen.sh
+
+Also a big thank to @StevenBlack for providing unified host files for this project.
 
 ## Instruction
 Please enable support JFFS2 or use your own USB Drive attached to your router.
