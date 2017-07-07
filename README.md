@@ -23,14 +23,16 @@ Then, run this line to make a host file. Wait until the process finished.
 `sh /jffs/adbhostgen.sh`
 
 On the same page, enable Cron schedule, and add this line into the textbox.
+
 `0 6 * * 1 root /jffs/dnsmasq/adbhostgen.sh`
 
 Now, we need to make some changes in DNSMasq setting.
+
 `DDWRT router homepage > Services > Services > DNSMasq`
-  DNSMasq: Enable
-  Local DNS: Enable
-  No DNS Rebind: Enable
-  Inside the "Additional DNSMasq Options" add these lines:
+  + DNSMasq: Enable
+  + Local DNS: Enable
+  + No DNS Rebind: Enable
+  + Inside the "Additional DNSMasq Options" add these lines:
     `addn-hosts=/jffs/dnsmasq/mphosts
     dhcp-option=6, 176.103.130.130, 176.103.130.131`
     
